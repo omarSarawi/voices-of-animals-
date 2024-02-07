@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal Sounds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: linear-gradient(135deg, #67b26f, #4ca2cd);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+            width: 100%;
+        }
+
+        .animal {
+            position: relative;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+        .animal:hover {
+            transform: translateY(-5px);
+        }
+
+        .animal img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .animal:hover img {
+            transform: scale(1.1);
+        }
+
+        .animal audio {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            padding: 5px 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .animal:hover audio {
+            opacity: 1;
+        }
+
+        .animal-desc {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #333;
+
+        }
+
+        pre {
+            border-radius: 10px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        #wolf {
+
+            height: 320px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro">
+        <h1> The Language of Wildlife</h1>
+        <pre>
+Animal sounds reveal the intricacies of communication and behavior. 
+Let's explore the distinct vocalizations of the cat, the wolf, and the tiger.
+
+From the cat's gentle purrs to the wolf's haunting howls and the tiger's thunderous roars, 
+these vocalizations offer a captivating glimpse into the natural world's rich tapestry of sounds.
+ Understanding them enhances our appreciation of wildlife's diversity and complexity.
+        </pre>
+    </div>
+
+    <div class="animal">
+        <img src="image-cat.jpg" alt="Cat">
+        <audio controls>
+            <source src="cat.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="animal-desc">
+            <p>The domestic cat (Felis catus) is known for its independent nature and affectionate companionship.</p>
+        </div>
+    </div>
+
+    <div class="animal" id="wolf">
+        <img src="image-wolf.jpg" alt="wolf">
+        <audio controls>
+            <source src="wolf (1).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="animal-desc">
+            <p>Wolves (Canis lupus) are highly social animals known for their intelligence and teamwork. They play a
+                crucial role in maintaining ecosystem balance.</p>
+        </div>
+    </div>
+    <div class="animal">
+        <img src="image-tiger.jpg" alt="tiger">
+        <audio controls>
+            <source src="Tiger.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="animal-desc">
+            <p>Tigers (Panthera tigris) are powerful big cats, symbolizing strength and grace. They are endangered due
+                to habitat loss and poaching.</p>
+        </div>
+    </div>
+</body>
+
+</html>
